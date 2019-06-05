@@ -134,6 +134,7 @@ table {
   box-sizing: border-box;
 }
 @padding: 10px;
+@backgroundLtGrey: lightgray;
 
 html,
 body {
@@ -156,10 +157,13 @@ body {
 
     nav:first-child {
       padding-left: 65%;
+      @media (max-width: 500px) {
+        padding: @padding;
+      }
     }
   }
   .top-content {
-    background: lightgray;
+    background: @backgroundLtGrey;
     padding: @padding;
     display: flex;
     flex-direction: column;
@@ -169,14 +173,23 @@ body {
       color: black;
       font-size: 300%;
       padding: @padding;
+      @media (max-width: 500px) {
+        font-size: 200%;
+      }
     }
     h2 {
       color: black;
       font-size: 150%;
       padding: @padding;
+      @media (max-width: 500px) {
+        font-size: 125%;
+      }
     }
     img {
       width: 50%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
     p {
       border-top: 2px solid gray;
@@ -186,6 +199,11 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @media (max-width: 500px) {
+        .phone {
+          display: none;
+        }
+      }
       li {
         margin: 30px;
         padding: @padding;
@@ -208,6 +226,10 @@ body {
     p {
       font-size: 125%;
       line-height: 150%;
+      @media (max-width: 500px) {
+        font-size: 100%;
+        line-height: 100%;
+      }
     }
     .one {
       width: 45%;
@@ -248,10 +270,10 @@ body {
       border-bottom: 2px solid gray;
     }
     .listing-1 {
-      background: lightgray;
+      background: @backgroundLtGrey;
     }
     .listing-3 {
-      background: lightgray;
+      background: @backgroundLtGrey;
     }
     ul {
       display: flex;
@@ -263,6 +285,9 @@ body {
       .first-item {
         width: 20%;
         text-align: left;
+        @media (max-width: 500px) {
+          width: 10%;
+        }
       }
       .second-item {
         width: 50%;
@@ -271,6 +296,9 @@ body {
       .final-item {
         width: 30%;
         text-align: left;
+        @media (max-width: 500px) {
+          width: 40%;
+        }
       }
     }
   }

@@ -156,6 +156,12 @@ html header nav:first-child,
 body header nav:first-child {
   padding-left: 65%;
 }
+@media (max-width: 500px) {
+  html header nav:first-child,
+  body header nav:first-child {
+    padding: 10px;
+  }
+}
 html .top-content,
 body .top-content {
   background: lightgray;
@@ -171,15 +177,33 @@ body .top-content h1 {
   font-size: 300%;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  html .top-content h1,
+  body .top-content h1 {
+    font-size: 200%;
+  }
+}
 html .top-content h2,
 body .top-content h2 {
   color: black;
   font-size: 150%;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  html .top-content h2,
+  body .top-content h2 {
+    font-size: 125%;
+  }
+}
 html .top-content img,
 body .top-content img {
   width: 50%;
+}
+@media (max-width: 500px) {
+  html .top-content img,
+  body .top-content img {
+    width: 100%;
+  }
 }
 html .top-content p,
 body .top-content p {
@@ -191,6 +215,12 @@ body .top-content ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  html .top-content ul .phone,
+  body .top-content ul .phone {
+    display: none;
+  }
 }
 html .top-content ul li,
 body .top-content ul li {
@@ -217,6 +247,13 @@ html .mid-content p,
 body .mid-content p {
   font-size: 125%;
   line-height: 150%;
+}
+@media (max-width: 500px) {
+  html .mid-content p,
+  body .mid-content p {
+    font-size: 100%;
+    line-height: 100%;
+  }
 }
 html .mid-content .one,
 body .mid-content .one {
@@ -284,6 +321,12 @@ body .work-history ul .first-item {
   width: 20%;
   text-align: left;
 }
+@media (max-width: 500px) {
+  html .work-history ul .first-item,
+  body .work-history ul .first-item {
+    width: 10%;
+  }
+}
 html .work-history ul .second-item,
 body .work-history ul .second-item {
   width: 50%;
@@ -293,4 +336,10 @@ html .work-history ul .final-item,
 body .work-history ul .final-item {
   width: 30%;
   text-align: left;
+}
+@media (max-width: 500px) {
+  html .work-history ul .final-item,
+  body .work-history ul .final-item {
+    width: 40%;
+  }
 }
