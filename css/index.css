@@ -130,6 +130,15 @@ table {
 * {
   box-sizing: border-box;
 }
+.flexColEven {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
 html,
 body {
   height: 100%;
