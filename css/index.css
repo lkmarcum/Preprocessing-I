@@ -252,9 +252,45 @@ body .work-history {
   flex-direction: column;
   justify-content: space-evenly;
 }
+html .work-history h4,
+body .work-history h4 {
+  font-size: 150%;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+html .work-history .work-top,
+body .work-history .work-top {
+  font-weight: bold;
+  border-bottom: 2px solid gray;
+}
+html .work-history .listing-1,
+body .work-history .listing-1 {
+  background: lightgray;
+}
+html .work-history .listing-3,
+body .work-history .listing-3 {
+  background: lightgray;
+}
 html .work-history ul,
 body .work-history ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+html .work-history ul .first-item,
+body .work-history ul .first-item {
+  width: 20%;
+  text-align: left;
+}
+html .work-history ul .second-item,
+body .work-history ul .second-item {
+  width: 50%;
+  text-align: left;
+}
+html .work-history ul .final-item,
+body .work-history ul .final-item {
+  width: 30%;
+  text-align: left;
 }
