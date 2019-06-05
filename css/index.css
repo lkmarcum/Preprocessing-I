@@ -150,10 +150,11 @@ html header nav a,
 body header nav a {
   text-decoration: none;
   color: black;
+  font-size: 125%;
 }
 html header nav:first-child,
 body header nav:first-child {
-  padding-left: 75%;
+  padding-left: 65%;
 }
 html .top-content,
 body .top-content {
@@ -207,13 +208,41 @@ body .mid-content {
   flex-direction: row;
   justify-content: space-around;
 }
+html .mid-content h3,
+body .mid-content h3 {
+  font-size: 200%;
+  padding: 10px;
+}
+html .mid-content p,
+body .mid-content p {
+  font-size: 125%;
+  line-height: 150%;
+}
 html .mid-content .one,
 body .mid-content .one {
-  width: 50%;
+  width: 45%;
 }
 html .mid-content .skills,
 body .mid-content .skills {
-  width: 50%;
+  width: 45%;
+}
+html .mid-content .skills h4,
+body .mid-content .skills h4 {
+  font-size: 175%;
+  padding: 10px;
+}
+html .mid-content .skills ul,
+body .mid-content .skills ul {
+  border: 1px solid lightgray;
+}
+html .mid-content .skills ul li,
+body .mid-content .skills ul li {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+html .mid-content .skills ul .final-item,
+body .mid-content .skills ul .final-item {
+  border-bottom: none;
 }
 html .work-history,
 body .work-history {

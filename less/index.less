@@ -150,11 +150,12 @@ body {
       a {
         text-decoration: none;
         color: black;
+        font-size: 125%;
       }
     }
 
     nav:first-child {
-      padding-left: 75%;
+      padding-left: 65%;
     }
   }
   .top-content {
@@ -200,11 +201,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    h3 {
+      font-size: 200%;
+      padding: @padding;
+    }
+    p {
+      font-size: 125%;
+      line-height: 150%;
+    }
     .one {
-      width: 50%;
+      width: 45%;
     }
     .skills {
-      width: 50%;
+      width: 45%;
+      h4 {
+        font-size: 175%;
+        padding: @padding;
+      }
+      ul {
+        // padding: @padding;
+        border: 1px solid lightgray;
+        li {
+          padding: @padding * 2;
+          border-bottom: 1px solid lightgray;
+        }
+        .final-item {
+          border-bottom: none;
+        }
+      }
     }
   }
   .work-history {
